@@ -6,6 +6,21 @@
 
       <meta charset="UTF-8">
 
+      <script>
+        function digitalClock() {
+          var date = new Date();
+          var hours = date.getHours();
+          var minutes = date.getMinutes();
+          var seconds = date.getSeconds();
+
+          if (hours < 10) hours = "0" + hours;
+          if (minutes < 10) minutes = "0" + minutes;
+          if (seconds < 10) seconds = "0" + seconds;
+            document.getElementById("id_clock").innerHTML = hours + ":" + minutes + ":" + seconds;
+            setTimeout("digitalClock()", 1000);
+        }
+        </script>
+
       <title>My first web page</title>
 
   </head>
@@ -13,8 +28,10 @@
   <body>
 
   <header>
+
     <img src="https://www.w3schools.com/images/lamp.jpg" alt="Some image" width="480" height="240"
-       style="border:5px solid green; margin-left: 700px; border-radius: 10px">
+     style="border:5px solid green; margin-left: 700px; border-radius: 10px">
+
   </header>
 
   <main>
@@ -22,6 +39,10 @@
     <h3>About me</h3>
     <h3>Experience</h3>
     <h3>Projects</h3>
+    <h4>
+      <div id="id_clock"></div> 
+      <script>digitalClock();</script>
+    </h4>
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut dolorum eaque eius explicabo fugit hic ipsa ipsum
       iste maxime modi necessitatibus nulla omnis quaerat, quam quos tempore totam voluptatum.</p>
