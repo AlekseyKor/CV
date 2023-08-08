@@ -8,14 +8,14 @@
 
       <script>
         function digitalClock() {
-          var date = new Date();
-          var hours = date.getHours();
-          var minutes = date.getMinutes();
-          var seconds = date.getSeconds();
+            let date = new Date();
+            let hours = date.getHours();
+            let minutes = date.getMinutes();
+            let seconds = date.getSeconds();
 
-          if (hours < 10) hours = "0" + hours;
-          if (minutes < 10) minutes = "0" + minutes;
-          if (seconds < 10) seconds = "0" + seconds;
+            if (hours < 10) hours = "0" + hours;
+            if (minutes < 10) minutes = "0" + minutes;
+            if (seconds < 10) seconds = "0" + seconds;
             document.getElementById("id_clock").innerHTML = hours + ":" + minutes + ":" + seconds;
             setTimeout("digitalClock()", 1000);
         }
@@ -40,7 +40,7 @@
     <h3>Experience</h3>
     <h3>Projects</h3>
     <h4>
-      <div id="id_clock"></div> 
+      <p id="id_clock"></p>
       <script>digitalClock();</script>
     </h4>
 
