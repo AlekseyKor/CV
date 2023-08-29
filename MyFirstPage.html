@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My first web page</title>
+</head>
+<body>
+<header>
+  <img src="https://www.w3schools.com/images/lamp.jpg" alt="Some image" width="480" height="240"
+       style="border:5px solid green; margin-left: 700px; border-radius: 10px">
+</header>
+<main>
+  <h3>About me</h3>
+  <h3>Experience</h3>
+  <h3>Projects</h3>
+  <h4>
+    <p id="id_clock"></p>
+    <script>
+      function digitalClock() {
+        let date = new Date();
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let seconds = date.getSeconds();
+
+        if (hours < 10) hours = "0" + hours;
+        if (minutes < 10) minutes = "0" + minutes;
+        if (seconds < 10) seconds = "0" + seconds;
+        document.getElementById("id_clock").innerHTML = hours + ":" + minutes + ":" + seconds;
+        setTimeout("digitalClock()", 1000);
+      }
+      digitalClock();
+    </script>
+  </h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut dolorum eaque eius explicabo fugit hic ipsa ipsum
+    iste maxime modi necessitatibus nulla omnis quaerat, quam quos tempore totam voluptatum.</p>
+  <p>Adipisci culpa doloremque id, nostrum porro repellat sit. Consequuntur inventore magnam sunt tempora? Amet
+    consequuntur eligendi, excepturi hic impedit obcaecati perferendis perspiciatis placeat recusandae repellat sapiente
+    temporibus, ut vel vitae?</p>
+  <p>Aliquam eligendi facilis illum inventore ipsa non nostrum, quidem quos soluta veniam. Ab asperiores debitis
+    dignissimos esse exercitationem iste, tempore voluptatibus. Laborum non numquam provident quisquam recusandae?
+    Consequatur, sit, unde?</p>
+  <p>Atque debitis dolorum earum fugiat maxime minus neque quaerat quia, ratione repellendus vel velit! Adipisci aliquid
+    deleniti eos facere ipsa iure laboriosam pariatur praesentium quam repellat soluta velit veniam, voluptatem.</p>
+</main>
+<footer>
+  <ul>
+    <li><a href="https://www.linkedin.com/in/oleksii-korchynskyi-4a58031b9/">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+        <path d="M2.5 0A2.5 2.5 0 0 1 5 2.5V13a2.5 2.5 0 0 1-5 0V2.5A2.5 2.5 0 0 1 2.5 0zM3 4.25a.25.25 0 0 0 .25-.25V2a.25.25 0 0 0-.25-.25A.25.25 0 0 0 2.75 2V4a.25.25 0 0 0 .25.25zM3 5a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H3zM4 7.25a.25.25 0 0 0 .25-.25V5a.25.25 0 0 0-.25-.25A.25.25 0 0 0 3.75 5V7a.25.25 0 0 0 .25.25zM13.937 4.64a.214.214 0 0 0 .215-.214c0-.12-.096-.215-.215-.215a.214.214 0 0 0-.214.215c0 .118.096.214.214.214zm.025 3.61c0-1.346-.402-2.28-1.404-2.28-.767 0-1.23.514-1.43 1.01h-.02V5.775h-.91c.012.257 0 2.255 0 2.255h.91V9.05a2.86 2.86 0 0 0 2.575-2.82zm-8.258.19a.907.907 0 1 0 .002 1.814.907.907 0 0 0-.002-1.814zM4.72 5.775h-.025a.243.243 0 0 0-.24.26v3.02c0 .143.09.238.235.25h.03V9.05c0-.028.002-.058.005-.086h.02a.254.254 0 0 0-.25-.266zM11.5 7.84a.86.86 0 1 0 0 1.722.86.86 0 0 0 0-1.722z"/>
+      </svg>
+      LinkedIn
+    </a></li>
+    <li><a href="https://github.com/AlekseyKor">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+        <path d="M8 0a8 8 0 0 0-2.52 15.58c.4.074.548-.173.548-.385 0-.19-.007-.692-.01-1.36-2.235.486-2.71-1.077-2.71-1.077-.366-.928-.892-1.174-.892-1.174-.728-.497.056-.487.056-.487.805.057 1.227.83 1.227.83.715 1.227 1.875.873 2.33.666.073-.54.28-.874.51-1.074-1.785-.203-3.656-.892-3.656-3.975 0-.88.313-1.6.83-2.165-.083-.203-.36-1.023.078-2.132 0 0 .67-.216 2.2.825a7.75 7.75 0 0 1 2-.273 7.75 7.75 0 0 1 2 .273c1.53-1.042 2.2-.825 2.2-.825.44 1.11.16 1.93.08 2.132.515.565.83 1.285.83 2.165 0 3.09-1.874 3.77-3.66 3.97.29.247.54.735.54 1.48 0 1.067-.01 1.927-.01 2.19 0 .213.148.46.55.384A8 8 0 0 0 8 0"/>
+      </svg>
+      GitHub
+    </a></li>
+    <li><a href="mailto:maritimealeksey@gmail.com">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+        <path d="M.143 2.5A1.497 1.497 0 0 1 1.5 1h13a1.497 1.497 0 0 1 1.357.883L8 9.835.143 2.5zm0 2.166L8 11.165 15.857 4.5H.143zM1 3.316l6.89 6.83a.5.5 0 0 0 .22.135.5.5 0 0 0 .22-.135L15 3.316V13a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3.316z"/>
+      </svg>
+      Email
+    </a></li>
+    <li><a href="tel:+4407361272880">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+        <path d="M14 11a1 1 0 0 1-1 1 1 1 0 0 1-1-1V5a1 1 0 0 1 1-1 1 1 0 0 1 1 1v6zm-2.523.879a15.93 15.93 0 0 0 1.146-1.658c.4-.538.742-1.132 1.023-1.774a25.23 25.23 0 0 0 .862-1.48c.287-.558.498-1.12.642-1.682a3.964 3.964 0 0 0 .09-.555c.017-.103.017-.206.017-.308a3 3 0 0 0-.837-1.95 8.979 8.979 0 0 0-1.5-1.5 3 3 0 0 0-1.949-.837c-.103 0-.206 0-.309.017a3.963 3.963 0 0 0-.555.09c-.562.144-1.124.355-1.682.642a25.23 25.23 0 0 0-1.48.862c-.642.281-1.236.623-1.774 1.023a15.93 15.93 0 0 0-1.658 1.146 16.07 16.07 0 0 0-2.073 2.073 15.93 15.93 0 0 0-1.658 1.146 25.23 25.23 0 0 0-1.48.862c-.558.287-1.12.498-1.682.642a3.964 3.964 0 0 0-.555.09c-.103.017-.206.017-.308.017a3 3 0 0 0-1.95-.837 8.98 8.98 0 0 0-1.5-1.5 3 3 0 0 0-.837-1.949c0-.103 0-.206.017-.309.017-.183.036-.366.072-.556a6.048 6.048 0 0 1 .246-1.103 6.048 6.048 0 0 1 1.103-.246c.189-.036.373-.055.556-.072.19-.017.382-.033.573-.046.191-.013.381-.02.572-.025a4.25 4.25 0 0 1 .518.017c.101.007.201.02.302.03a5.38 5.38 0 0 1 1.572.388c.491.243.96.512 1.403.807a5.38 5.38 0 0 1 1.242 1.242c.295.443.564.912.807 1.403a5.38 5.38 0 0 1 .388 1.572c.01.1.023.2.03.302a4.25 4.25 0 0 1 .018.518c.005.191.012.381.025.572.013.191.03.382.046.573.013.182.03.363.046.545.041.436.085.876.148 1.318a16.07 16.07 0 0 0 2.073 2.073z"/>
+      </svg>
+      Phone number
+    </a></li>
+  </ul>
+</footer>
+</body>
+</html>
